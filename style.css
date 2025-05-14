@@ -1,0 +1,131 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+:root{
+    --main-color-100: #ffffff;
+    --main-color-200: #673de6;
+    --main-color-300: #2f1c6a;
+    --main-color-400: #1f1346;
+}
+
+.text-large{
+    color: var(--main-color-100);
+    font-size: 36px;
+}
+
+.text-medium{
+    color: var(--main-color-100);
+    font-size: 20px;
+}
+
+.text-small{
+    color: var(--main-color-100);
+    font-size: 16px;
+}
+
+.section-migration{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color-400);
+    padding: 80px 0;
+    gap: 40px;
+}
+
+.section-migration__title{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    padding: 0 40px;
+    /* margin: 0 100px; */
+    max-width: 1128px;
+}
+
+.migration-description{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.section-migration__cards{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-self: center;
+    gap: 24px;
+    padding: 0 40px;
+    max-width: 1128px;
+}
+
+.cards-info{
+    background-color: var(--main-color-300);
+    padding: 32px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.cards-icon{
+    color: var(--main-color-100);
+    background-color: var(--main-color-200);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-self: start;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.button{
+    text-decoration: none;
+    color: var(--main-color-100);
+    background-color: var(--main-color-200);
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    border-radius: 8px;
+    padding: 12px 48px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1279px) {
+    .section-migration{
+        max-width: 1279px;
+    }
+
+    .section-migration__cards{
+        flex-direction: column;
+        align-items: center;
+        max-width: 688px;
+    }
+
+    .section-migration__title{
+        max-width: 688px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-migration{
+        max-width: 768px;
+    }
+
+    .section-migration__cards{
+        max-width: 508px;
+        padding: 0 16px;
+    }
+
+    .section-migration__title{
+        max-width: 508px;
+    }
+}
