@@ -155,7 +155,7 @@ nav{
 .section-hero-content{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 8px;
 }
 
@@ -219,6 +219,7 @@ ul{
 .hero-buttons__deal{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: var(--main-color-300);
     border: none;
     padding: 12px 48px;
@@ -427,10 +428,15 @@ footer{
     .section-hero-content{
         flex-direction: column;
         gap: 32px;
+        max-width: 688px;
     }
 
     .section-hero-content__left{
         width: 100%;
+    }
+
+        .hero-img{
+        max-width: 688px;
     }
 
     .section-migration{
@@ -466,6 +472,26 @@ footer{
 
 @media screen and (max-width: 768px) {
 
+    .section-hero-content{
+        max-width: 508px;
+    }
+
+    .hero-buttons{
+        flex-direction: column-reverse;
+    }
+
+    .hero-buttons__deal{
+        width: 100%;
+    }
+
+    .hero-buttons__timer{
+        width: 100%;
+    }
+
+    .hero-img{
+        max-width: 508px;
+    }
+
     .section-migration{
         max-width: 768px;
     }
@@ -477,6 +503,24 @@ footer{
 
     .section-migration__title{
         max-width: 508px;
+    }
+
+    .footer-section{
+        max-width: 508px;
+    }
+
+    .footer-content-top{
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
+
+    .footer-content__social{
+        justify-content: space-between;
+    }
+
+    .footer-content__payments-icons{
+        width: 300px;
+        flex-wrap: wrap
     }
 
 }
